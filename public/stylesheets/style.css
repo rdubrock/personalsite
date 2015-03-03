@@ -1,5 +1,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  margin: 0;
 }
 /* this is the css for individual entries*/
 /**********************************
@@ -39,6 +41,8 @@ Project section
 .content-container {
 width: 100%;
 margin-top: 100vh;
+margin-right: auto;
+margin-left: auto;
 position: relative;
 background: transparent;
 z-index: 2;
@@ -51,23 +55,39 @@ background: #fff;
 position: relative;
 text-align: center;
 z-index: 2;
-box-shadow: rgba(35,35,50,0.8) 0px 0px 11px -2px;
 margin: 0;
+
 }
 
-#project-row h2 {
+#project-row h1 {
+  font-size: 4em;
   padding: 1em 0;
+  text-shadow: 2px 2px 1px rgba(36, 36, 42, .8);
+
+}
+
+hr {
+  width: 66%;
+  height: .75em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 5em;
+  background-color: black;
+  box-shadow: 2px 2px 1px rgba(36, 36, 42, .8);
 }
 
 #projects {
 margin: 0;
+width: 100%;
 list-style: none;
 display: none;
 }
 
 #slider {
-  margin-right: 1em;
-  margin-left: 1em;
+  margin: 3em;
+  margin-top: 0;
+  padding: 2em;
+  padding-top: 0;
 }
 
 .container img {
@@ -93,24 +113,133 @@ max-width: 100%;
   z-index:2;
 }
 /**********************************
-Bio
+Tools
+**********************************/
+#tools-row {
+  background-color: rgba(66, 139, 202, 0.75);
+  position: relative;
+
+
+}
+
+#tools {
+  text-align: center;
+}
+
+#tools h1 {
+    font-size: 4em;
+    padding-top: 0;
+    text-shadow: 2px 2px 1px rgba(36, 36, 42, .8);
+}
+
+.col-md-4 {
+  padding: 2em;
+}
+.col-md-4 img {
+  width: 100%;
+}
+
+#node-logo {
+  padding-top: 25%;
+  padding-left: 2em;
+  padding-right: 2em;
+  position: relative;
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5)); filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
+
+}
+
+#cs-js-css-logo {
+  position: relative;
+  padding-top: 10%;
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5)); filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
+
+}
+
+#angular-logo {
+  padding: 9em;
+  padding-top: 12%;
+  padding-left: 6em;
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5)); filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
+
+}
+
+
+/**********************************
+Contact
 **********************************/
 
-#bio-row {
-  background: green;
-  position: relative;
+#contact-row {
+  background-color: white;
 }
 
-#bio h1 {
+#contact-row h1 {
   text-align: center;
-  padding-top: 0;
   font-size: 4em;
+  text-shadow: 2px 2px 1px rgba(36, 36, 42, .8);
 }
 
-#bio p {
+.article {
+  float: left;
+  
+  margin: auto;
+}
+
+.article img {
+  width: 100%;
+}
+
+.contact {
+  width: 33%;
+}
+.networks {
+  width: 66%;
+  padding: 3em;
+
+}
+.networks h1 {
+  margin-bottom: 1.25em;
+}
+.networks h2 {
+  margin-top: 2.5em;
+  margin-bottom: 2em;
+}
+.fa-github{
+  float: middle;
+  text-shadow: 1.5px 1.5px 1px rgba(36, 36, 42, .8);
+}
+.fa-github:hover {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.fa-linkedin-square {
+  float: middle;
+  text-shadow: 1.5px 1.5px 1px rgba(36, 36, 42, .8);
+}
+.fa-linkedin-square:hover {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.fa-envelope-square {
+  float: middle;
+  text-shadow: 1.5px 1.5px 1px rgba(36, 36, 42, .8);
+}
+.fa-envelope-square:hover {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+
+}
+
+.networks {
   text-align: center;
-  padding: .5em;
-  margin-left: 5%;
-  margin-right: 5%;
-  font-size: 1em;
+}
+
+a {
+  color: inherit;
+}
+
+i {
+  margin: .25em;
+
 }
